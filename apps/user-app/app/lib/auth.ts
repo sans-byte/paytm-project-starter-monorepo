@@ -33,6 +33,7 @@ export const authOptions = {
             }
 
             try {
+                // Todo : Send an otp to users phone number 
                 const user = await db.user.create({
                     data: {
                         number: credentials.phone,
